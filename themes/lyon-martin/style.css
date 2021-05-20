@@ -1,0 +1,59 @@
+/*
+ Theme Name:   Lyon Martin
+ Theme URI:    https://lyon-martin.org
+ Description:  Custom Theme for Lyon Martin (Twenty Twenty One Child)
+ Author:       Marlo Longley
+ Author URI:   https://codeandcursor.com
+ Template:     twentytwentyone
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         responsive-layout, accessibility-ready
+ Text Domain:  lyonmartin
+*/
+
+:root {
+
+  --global--color-primary: #000000;
+  --global--color-background: #ffffff;
+
+
+  --branding--title--text-transform: none;
+}
+
+/* Accordion
+		------------------------------------------------------------ */
+.schema-faq-section {
+  background-color: #82cfcb;
+  margin: 15px 0;
+
+}
+.schema-faq-question{
+  cursor: pointer;
+}
+
+.schema-faq-question:before{
+  width: 16px;
+  height: 20px;
+  display: inline-block;
+  content: "+";
+  margin-right: 5px;
+  vertical-align: top;
+}
+
+.schema-faq-question.collapse:before{
+  content: "-";
+}
+
+.schema-faq-question:hover{
+  opacity: 0.8;
+}
+
+.schema-faq-answer{
+  display: none;
+  /*padding-left: 1em;*/
+  background-color: var(--global--color-background);
+}
+.schema-faq-answer.default{
+  display: block;
+}
