@@ -38,6 +38,7 @@
 		);
 		?>
 
+		// Add latest news section if front page
 		<?php if ( is_front_page() ) : ?>
 			<?php get_template_part( 'template-parts/widgets/latest-news' ); ?>
 		<?php endif; ?>
