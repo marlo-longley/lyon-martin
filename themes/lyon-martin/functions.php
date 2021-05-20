@@ -24,18 +24,8 @@ function my_acf_init_block_types() {
             'category'          => 'widgets',
         ));
 
-        // register faq block.
-		acf_register_block_type(array(
-			'name'              => 'faq_entry',
-			'title'             => __('FAQ Entry'),
-			'description'       => __('Collapsible FAQ Entry consisting of a Question and Answer'),
-			'render_template'   => 'template-parts/blocks/faq-entry.php',
-			'category'          => 'formatting',
-		));
     }
 }
-
-
 
 /**
  * Register widget area.
